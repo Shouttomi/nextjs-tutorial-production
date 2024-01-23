@@ -14,5 +14,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  /* daisyui suggests adding the '@tailwindcss/typography' first then
+    adding the daisyui */
+
+    /* Plugins in Tailwind CSS allow you to extend the default 
+    functionality of the framework by adding additional utility
+     classes, components, or features. They provide a way to 
+     include pre-designed styles and components that go beyond
+      the core set of utilities provided by Tailwind. */
+      
+  plugins: [require('@tailwindcss/typography'),require('daisyui')],
 }
